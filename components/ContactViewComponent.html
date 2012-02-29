@@ -1,0 +1,60 @@
+<script id="tmpl-UserViewContent1" type="text/html">
+<div class="operateUserPrompt operateUsers">
+     <div class="groupTit"></div>
+     <div class="userAddDiv"> 
+		    <span class="userAddSpan">Name:&nbsp;</span>
+			<span class="userAddSpan">{{name}}</span>
+    		<input id='useridInput' value="{{id}}" type="hidden">
+            <br>
+    		<span class="userAddSpan">Email:&nbsp;</span>
+    		<span class="userAddSpan">{{email}}</span>
+            <br>
+   			<span class="userAddSpan">PhoneNum:&nbsp;</span>
+    		<span class="userAddSpan">{{pno}}</span>
+          	<br>
+   			<span class="userAddSpan">Title:&nbsp;</span>
+    		<span class="userAddSpan">{{title}}</span>
+          	<br>
+     </div>
+     <div class="subbut">
+ 		 <input type="button" value="Cancle" class="addBut cancleprompt">
+     </div>
+</div>
+</script>
+
+<script id="tmpl-UserViewContent" type="text/html">
+<div class="operateUserPrompt operateUsers">
+  <form class="form-horizontal">
+      <div class="control-group">
+        <label class="control-label">Name:&nbsp;</label>
+        <div class="controls">
+          <input type="text" value="{{#if name}}{{name}}{{/if}}"  class="input-xlarge focused">
+		  <input  value="{{id}}" type="hidden">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Email:&nbsp;</label>
+        <div class="controls">
+		  <input type="text" value="{{#if email}}{{email}}{{/if}}"  class="input-xlarge">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">PhoneNO:&nbsp;</label>
+        <div class="controls">
+          <input type="text" value="{{#if pno}}{{pno}}{{/if}}"  class="input-xlarge">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Title:&nbsp;</label>
+        <div class="controls">
+          <input type="text" value="{{#if title}}{{title}}{{/if}}"  class="input-xlarge">
+        </div>
+      </div>
+      <div class="form-actions">
+        <input class="btn btn-primary cancleprompt" value="Cancle"/>
+      </div>
+  </form>
+</div>
+</script>
+
+

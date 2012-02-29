@@ -1,0 +1,44 @@
+<script id="tmpl-UserEditContent" type="text/html">
+<div class="row-fluid">
+<div class="span1">&nbsp;</div>
+<div class="span10 operateUsers">
+  <form class="form-horizontal">
+    <fieldset>
+      <legend>Add/Update Contact</legend>
+      <div class="control-group">
+        <label class="control-label">Name:&nbsp;</label>
+        <div class="controls">
+          <input type="text" value="{{#if name}}{{name}}{{/if}}" id='nameInput' class="input-xlarge focused">
+		  <input id='useridInput' value="{{id}}" type="hidden">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Email:&nbsp;</label>
+        <div class="controls">
+		  <input type="text" value="{{#if email}}{{email}}{{/if}}" id='emailInput' class="input-xlarge">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">PhoneNO:&nbsp;</label>
+        <div class="controls">
+          <input type="text" value="{{#if pno}}{{pno}}{{/if}}" id='phoneNumberInput' class="input-xlarge">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Title:&nbsp;</label>
+        <div class="controls">
+          <input type="text" value="{{#if title}}{{title}}{{/if}}" id='titleInput' class="input-xlarge">
+        </div>
+      </div>
+      <div class="form-actions">
+        <input class="btn btn-primary updateUser" value="Add" />
+        <input class="btn  userCancle" value="Cancle"/>
+      </div>
+    </fieldset>
+  </form>
+</div>
+<div class="span1">&nbsp;</div>
+</div>
+</script>
+
+

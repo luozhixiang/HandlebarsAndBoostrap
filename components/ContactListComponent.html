@@ -1,0 +1,47 @@
+<script id="tmpl-UserContent" type="text/html">
+<div class="row-fluid">
+
+<div class='span4'>
+  <div class="box">
+    <h2>If you add new contact,please click here</h2>
+	<div>
+  	<input type="button" class="btn addNewUser" value="Add Contact">
+	</div>
+  </div>
+</div>
+
+<div class='span7'>
+  <div class="box">
+  <h2>List of contact</h2>
+  <table class="table table-striped table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th class="yellow">Name</th>
+        <th class="blue">Email</th>
+        <th class="green">&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+ 	  {{#each users}}
+      <tr data-obj_type="Users" data-obj_id="{{id}}">
+        <td>1</td>
+        <td>{{this.name}}</td>
+        <td>{{#if this.email}}{{this.email}}{{else}}&nbsp;{{/if}}</td>
+        <td>
+			<span class='hand delUser'>X</span>
+			<span>&nbsp;</span>
+			<span class='hand updateExistUser'>update</span>
+			<span>&nbsp;</span>
+			<span class='hand viewDetail'>detail</span>
+		</td>
+      </tr>
+	  {{/each}}
+    </tbody>
+  </table>
+  </div>
+</div>
+
+</div>
+</script>
+
